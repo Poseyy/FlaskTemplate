@@ -1,0 +1,314 @@
+:root
+{
+    --shadow-color: rgb(76, 157, 194);
+    --shadow-size: 10px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    color: white;
+    font-family: sans-serif;
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+nav
+{
+    width: 100vw;
+    height: 64px;
+    padding: 4rem;
+    background-color: #3256a8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1
+{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+nav ul li
+{
+    margin: 2rem;
+}
+
+nav ul li:hover .underline
+{
+    transform: translateY(0.5rem);
+    opacity: 1;
+}
+
+nav ul li a:link, nav ul li a:visited
+{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.main-background
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3256a8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.form-input
+{
+    color: #A4A4A4;
+    width: 600px;
+    height: 48px;
+    padding: 2rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+}
+
+.form-input::placeholder
+{
+    color: #A4A4A4;
+}
+
+.form-input:focus
+{
+    box-shadow: 7px 7px var(--shadow-size) var(--shadow-color), -7px 7px var(--shadow-size) var(--shadow-color), 7px -7px var(--shadow-size) var(--shadow-color), -7px -7px var(--shadow-size) var(--shadow-color);
+}
+
+.btn-create
+{
+    color: white;
+    width: 122px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    background-color: #303030;
+    box-shadow: -10px 10px 20px rgba(58, 57, 120, 0.33);
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+.btn-create:hover
+{
+    background-color: #151515;
+}
+
+.btn-download
+{
+    color: white;
+    width: 122px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    background-color: #3234a8;
+    box-shadow: -7px 7px 15px rgba(58, 57, 120, 0.33);
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+.btn-download:hover
+{
+    background-color: #3234a8;
+}
+
+.btn-generate
+{
+    color: white;
+    width: 122px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    background-color: #878787;
+    box-shadow: -7px 7px 15px rgba(58, 57, 120, 0.33);
+    margin-left: 1rem;
+    border-radius: 3px;
+}
+
+.btn-generate:hover
+{
+    background-color: #999999;
+}
+
+.underline
+{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.page-2
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%,-50%) translateY(75px);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3256a8;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+ }
+
+.default-link
+{
+    color: white;
+    text-decoration: none;
+}
+
+.heading-1
+{
+    font-size: 4rem;
+}
+
+.heading-2
+{
+    font-size: 2rem;
+}
+
+.text-light
+{
+    font-weight: 100;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+	background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background: #555; 
+}
+
+.mb-1
+{
+    margin-bottom: 1rem;
+}
+
+.mb-2
+{
+    margin-bottom: 2rem;
+}
+
+.mb-4
+{
+    margin-bottom: 4rem;
+}
+
+.mt-2
+{
+    margin-top: 2rem;
+}
+
+.mt-4
+{
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 75em)
+{
+    html
+    {
+        font-size: 50%;
+    }
+
+    .form-input
+    {
+        width: 512px;
+    }
+}
+
+@media only screen and (max-width: 37em)
+{
+    .heading-1
+    {
+        font-size: 5rem;
+    }
+
+    .heading-2
+    {
+        font-size: 2rem;
+    }
+
+    .form-input
+    {
+        width: 300px;
+    }
+
+    .btn-create
+    {
+        width: 96px;
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 22em)
+{
+    nav
+    {
+        display: none;
+    }
+
+    .form-input
+    {
+        width: 256px;
+    }
+}
